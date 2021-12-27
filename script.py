@@ -121,7 +121,7 @@ def main():
                 lock_unlock(fps)
                 
             time.sleep(0.5)
-        except KeyboardInterrupt and SystemExit:
+        except KeyboardInterrupt or SystemExit:
             clean()
             exit(0)
             
